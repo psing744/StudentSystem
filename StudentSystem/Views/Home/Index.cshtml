@@ -1,4 +1,4 @@
-﻿@model StudentSystem.Models.Student;
+﻿@model Student;
 
 @{
     Layout = null;
@@ -13,5 +13,6 @@
 </head>
 <body>
     <p>First Name of student is <b>@Model.FirstName</b></p>
+    <a asp-action="ListStudents">List of Students</a>
 </body>
 </html>
