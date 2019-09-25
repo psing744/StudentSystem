@@ -1,18 +1,7 @@
 ﻿@model Student;
-
 @{
-    Layout = null;
+    Layout = "_BasicLayout";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Student Data</title>
-</head>
-<body>
-    <p>First Name of student is <b>@Model.FirstName</b></p>
-    <a asp-action="ListStudents">List of Students</a>
-</body>
-</html>
+<p>First Name of student is <b>@Model.FirstName</b></p>
+<a asp-action="ListStudents">List of Students</a>

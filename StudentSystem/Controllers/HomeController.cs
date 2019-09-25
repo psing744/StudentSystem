@@ -12,6 +12,7 @@ namespace StudentSystem.Controllers
         public ViewResult Index()
         {
             Student TestStudent = new Student() { FirstName = "Ram" };
+            ViewBag.Title = "Home";
             return View(TestStudent);
         }
 
@@ -23,6 +24,7 @@ namespace StudentSystem.Controllers
                 new Student { CourseCode = "C", Email="manik@gmail.com",FirstName = "Manik",FullTime=true,Gpa=3.5,LastName="Viz",StudentId=3 },
                 new Student { CourseCode = "D", Email="baljit@gmail.com",FirstName = "Baljit",FullTime=false,Gpa=4.3,LastName="Kaur",StudentId=4 }
             };
+            ViewBag.Title = "List of students";
             return View(students);
         }
     }

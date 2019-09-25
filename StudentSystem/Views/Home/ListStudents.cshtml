@@ -1,38 +1,27 @@
-﻿
-@{
-    Layout = null;
+﻿@{
+    Layout = "_BasicLayout";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>ListStudents</title>
-</head>
-<body>
-    <table>
-        <thead>
-             <tr>
-                <th>Course Code</th>
-                <th>Email</th>
-                <th>First Name</th>
-                <th>Full Time</th>
-                <th>Gpa</th>
-                <th>Student ID</th>
-             </tr>
-        </thead>
-            @foreach(var a in Model)
-             { 
-                <tr>
-                    <td>@a.CourseCode</td>
-                    <td>@a.Email</td>
-                    <td>@a.FirstName</td>
-                    <td>@a.FullTime</td>
-                    <td>@a.Gpa</td>
-                    <td>@a.StudentId</td>
-                </tr>
-             }
-    </table>
-</body>
-</html>
+<table>
+    <thead>
+        <tr>
+            <th>Course Code</th>
+            <th>Email</th>
+            <th>First Name</th>
+            <th>Full Time</th>
+            <th>Gpa</th>
+            <th>Student ID</th>
+        </tr>
+    </thead>
+    @foreach (var a in Model)
+    {
+        <tr>
+            <td>@a.CourseCode</td>
+            <td>@a.Email</td>
+            <td>@a.FirstName</td>
+            <td>@a.FullTime</td>
+            <td>@a.Gpa</td>
+            <td>@a.StudentId</td>
+        </tr>
+    }
+</table>
